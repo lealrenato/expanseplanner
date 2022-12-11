@@ -72,7 +72,7 @@ class MyHomePage extends StatelessWidget {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                    Text("data")
+                    
                       TextField(
                         decoration: InputDecoration(labelText: 'Title'),
                       ),
