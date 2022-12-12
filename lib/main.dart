@@ -47,6 +47,9 @@ class MyHomePage extends StatelessWidget {
     ),
   ];
 
+  String? titleInput;
+  String? amountInput;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,12 +75,13 @@ class MyHomePage extends StatelessWidget {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                    
                       TextField(
                         decoration: InputDecoration(labelText: 'Title'),
+                        onChanged: (valor) => titleInput = valor,
                       ),
                       TextField(
                         decoration: InputDecoration(labelText: 'Amount'),
+                        onChanged: (valor) => amountInput = valor,
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
